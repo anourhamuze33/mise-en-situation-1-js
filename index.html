@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body >
+    <div class="challenge1" onload ="onload_pqge()">
+        colore
+    </div>
+    <div class="challenge2">
+        d
+    </div>
+    <div class="challenge3"><p class="pp">hello</p></div>
+    <div class="challenge4"><p class="cont">0</p></div>
+    <div class="challenge5" id="1"> <button class="btn">cooloree</button></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+
+
+    <script>
+const div1 = document.querySelector(".challenge1");
+
+function onload_pqge(){
+    alert("hello zorld");
+    div1.style.backgroundColor = "green";
+     
+}
+
+
+const div2 = document.querySelector(".challenge2");
+div2.addEventListener("click", function(e){
+    div2.style.backgroundColor= "blue";
+});
+
+const pp = document.querySelector(".pp");
+const div3 = document.querySelector(".challenge3");
+div3.addEventListener("click", function(e){
+    alert("hello zorld")
+    pp.innerText="heee";
+    pp.style.fontSize="200px"
+
+
+});
+const cont = document.querySelector(".cont");
+let incri=0;
+const div4 = document.querySelector(".challenge4");
+div4.addEventListener("click", function(e){
+incri++;
+cont.innerText=incri;
+});
+const btn = document.querySelector(".btn");
+const div5 = document.querySelector(".challenge5");
+btn.addEventListener("click", function(e){
+    div5.classList.remove("challenge5")
+    div5.classList.toggle("bluue");
+const iid = div5.getAttribute("id");
+console.log(iid);
+
+});
+
+//challenge6
+//challenge7
+//challenge8
+
+
+
+    </script>
+</body>
+</html>
+
